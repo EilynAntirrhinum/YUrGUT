@@ -1,0 +1,323 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* MAIN PAGES */
+
+#main-registration, #main-choose-spec, #main-exams {
+    height: fit-content;
+    min-width: 1000px;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #f1a025;
+    color: black;
+}
+
+#title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#main-text-footer {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer > div {
+    margin-left: 90px;
+    padding: 20px;
+}
+
+/* HEADER AND NAVIGATION */
+
+header, #navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navigation {
+    width: 500px;
+}
+
+nav {
+    width: 430px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1330px;
+    height: 70px;
+    margin-left: 120px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70%;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-bottom: -8px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* LOGO AND USER BUTTON */
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+
+#logo > p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+#logo-pic {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+#link-to-main {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#user-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#user-button > img {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 35px;
+    height: 35px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="file"] {
+    margin-top: 8px;
+}
+
+.instruction {
+    font-size: 12px;
+}
+
+/* REGISTRATION FORM */
+
+input {
+    width: 600px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#personal-data, #specs-data, #exams-and-bonuses-data {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgba(252, 216, 16, 0.25);
+    border: 5px solid #fac132;
+    margin: 0 auto;
+}
+
+#text-info > p {
+    margin-left: 25px;
+}
+
+#specs-data {
+     margin-bottom: 242px;
+ }
+
+#personal-data > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name-surname-patronymic > div, #personal-info > div, #passport-info > div, #uploading-photo {
+    display: flex;
+    flex-direction: column;
+}
+
+#specs-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#specs-data > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#fill-exams-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#bonuses-score > label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bonuses-score > label > input {
+    width: 290px;
+}
+
+#personal-info > div, #passport-info > div {
+    padding-bottom: 15px;
+}
+
+#to-second-step-btn, #to-third-step-btn, #finish-statement-btn {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: #2caa99;
+    font-weight: 600;
+    border: 0px;
+    text-transform: uppercase;
+}
+
+#exams-and-bonuses-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#finish-statement-btn {
+    margin-top: 30px;
+}
+
+#finish-statement-btn:hover {
+    background-color: #f1a025;
+}
+
+#to-third-step-btn {
+    margin-top: 35px;
+}
+
+#to-second-step-btn:hover, #to-third-step-btn:hover {
+    background-color: #f1a025;
+}
+
+/* MODAL WINDOW */
+
+.active {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.modal-wrapper-lp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(119, 117, 117, 0.5);
+}
+
+.modal-window-lp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    width: 700px;
+    border: 1px #778496 solid;
+}
+
+.close-modal-lp {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-lp-btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 560px;
+    background-color: #2caa99;
+    font-weight: 600;
+    border: 0px;
+    text-transform: uppercase;
+}
+
+.save-lp-btn:hover {
+    background-color: #f1a025;
+}
+
+.lp-output {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.bonuses-stmt-info {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,634 @@
+body {
+    margin: 0px;
+    background-color: #e2e2e2;
+}
+
+#admin-auth-body {
+    background: url("/public/img/library.jpg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-stud-stmt > h3 {
+    margin-top: 2px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* LOG IN */
+
+#admin-auth {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN ON PAGE */
+
+#main-admin-auth {
+    flex: 1 0 auto;
+    padding: 20px 7% 20px 7%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15%;
+
+    background-color: white;
+    width: 150px;
+    height: fit-content;
+}
+
+/* BUTTON */
+
+.auth-admin-btn {
+    cursor: pointer;
+
+    border: 0px;
+    height: 40px;
+    width: 150px;
+
+    margin-left: 70px;
+
+    background-color: #2caa99;
+
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.auth-admin-btn:hover {
+    color: black !important;
+    background: #f1a025;
+}
+
+.auth-admin-btn::before {
+    color: black !important;
+    content: "";
+    background: #f1a025;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.label-log-in {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-log-in {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+/* NAVIGATION */
+
+header {
+    position: fixed;
+    background-color: white;
+    border-right: 5px solid #bbbbbb;
+    width: 200px;
+    height: 100%;
+}
+
+#button-logout > button {
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    margin-top:5px;
+
+    background-color: #f1a025;
+
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+#button-logout > button:hover  {
+    color: black !important;
+    background: #2caa99;
+}
+
+#button-logout > button::before {
+    color: black !important;
+    content: "";
+    background: #2caa99;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+#navigation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
+
+}
+
+.nav-buttons {
+    background: transparent;
+    border: 0;
+}
+
+/* COMMITTEE */
+
+#main-committee, #main-faculties, #main-specs, #main-spec-stmt, #main-stmts {
+    min-width: 1000px;
+    max-width: 1400px;
+    margin-left: 215px;
+}
+
+#main-stmts {
+    padding-top: 10px;
+}
+
+#main-spec-stmt {
+    padding-top: 10px;
+}
+
+#add-committee, #add-faculty, #add-spec  {
+    cursor: pointer;
+
+    border: 0px;
+    width: 230px;
+    height: 40px;
+    margin-top:15px;
+    margin-right: 10px;
+
+    background-color: #f1a025;
+
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+#add-committee:hover, #add-faculty:hover, #add-spec:hover  {
+    color: black !important;
+    background: #2caa99;
+}
+
+#add-committee::before, #add-faculty::before #add-spec::before {
+  color: black !important;
+  content: ""; 
+  background: #2caa99;
+
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+#add-faculty {
+    position: relative;
+    left: 1145px;
+}
+
+#container-committee, #container-faculty, #container-specs, .container-spec-stmt {
+    margin-top: 10px;
+}
+
+.committee-item, .faculty-item, .spec-item, .spec-stmt-item, .stmts-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.names-div {
+    display: flex;
+    flex-direction: row;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.names-div > img {
+    padding-top: 10px;
+}
+
+.names-div > div {
+    font-size: 18px;
+}
+
+.committee-item > p, .faculty-item > p, .spec-item > p, .spec-stmt-item > p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.committee-buttons {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+
+.committee-buttons > .control-buttons {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 0px;
+}
+
+.edit-btn, .spec-stmt-btn, .stmts-btn {
+    background-color: #d3d3d3;
+}
+
+.delete-btn {
+    background-color: rgb(255, 97, 97);
+}
+
+/* MODAL WINDOWS */
+
+.active {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.modal-wrapper-edit, .modal-wrapper-add, .modal-wrapper-exams {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(119, 117, 117, 0.5);
+}
+
+.modal-window-edit, .modal-window-add {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    width: fit-content;
+    border: 1px #778496 solid;
+}
+
+.modal-window-exams {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border: 1px #778496 solid;
+}
+
+#form-edit, #form-add {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-exams > div {
+    display: grid;
+    grid-template-columns: 170px 170px 170px;
+    grid-template-rows: 50px 50px 50px 50px;
+    align-items: start;
+}
+
+.label-exams {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-exams {
+    display: flex;
+    align-items: flex-start;
+    width: 40px;
+}
+
+#form-edit > h3, #form-add > h3, #form-exams > h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.close-modal-edit, .close-modal-add, .close-modal-exams {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#flex-container-edit > div, #flex-container-add > div {
+    width: 340px;
+}
+
+.flex-container-add-1, .flex-container-edit-1 {
+    margin-right: 20px;
+}
+
+#flex-container-edit, #flex-container-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input {
+    width: 339px;
+    height: 30px;
+}
+
+input, textarea {
+    border: 1px solid #818181;
+    border-radius: 0px;
+    margin-top: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+textarea {
+    resize: none;
+    text-align: justify;
+}
+
+#loaded-img-edit, #loaded-img-add  {
+    width: 340px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* FACULTIES */
+
+.faculty-buttons {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+
+.spec-btn  {
+    cursor: pointer;
+
+    width: 120px;
+    background-color: #d3d3d3;
+    height: 30px;
+    border: 0px;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-control-buttons {
+    cursor: pointer;
+
+    width: 30px;
+    height: 30px;
+    border: 0px;
+}
+
+#post-form-edit, #main-cont-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#post-form-edit > div, #main-cont-add > div {
+    width: 340px;
+}
+
+/* SPECIALITIES */
+
+.spec-buttons {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+
+.exams-btn {
+    cursor: pointer;
+
+    width: 120px;
+    background-color: #d3d3d3;
+    height: 30px;
+    border: 0px;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* STATEMENT */
+
+.spec-stmt-btn {
+    cursor: pointer;
+
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+
+    width: 200px;
+    background-color: #d3d3d3;
+    height: 30px;
+    border: 0px;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.spec-stmt-btn > a{
+    font-size: 14px;
+}
+
+.stmts-btn {
+    cursor: pointer;
+
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+
+    width: 200px;
+    background-color: #d3d3d3;
+    height: 30px;
+    border: 0px;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.stud-stmt-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-img-table {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    object-fit: cover;
+}
+
+#main-stud-stmt {
+    min-width: 1000px;
+    max-width: 1400px;
+    margin-left: 215px;
+    padding-bottom: 2px;
+    padding-top: 10px;
+}
+
+#container-stud-stmt {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.exams-stmt-info > div, .bonuses-stmt-info > div {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+
+.exams-stmt-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#check-com-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#check-com-form > label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.update-btn, .save-exams-btn, .add-btn {
+    margin: 0 auto;
+
+    width: 100%;
+    height: 30px;
+
+    border: 1px solid #818181;
+    border-radius: 0px;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.img-loading {
+    cursor: pointer;
+
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 35px;
+    width: 100%;
+    height: 30px;
+}
+
+.img-loading-add, .img-loading-add-spec {
+    cursor: pointer;
+
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 70px;
+    width: 100%;
+    height: 30px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.nonvis-alert {
+    visibility: hidden;
+}
+
+.vis-alert {
+    visibility: visible;
+}
+
+.exams-results {
+    margin-top: -10px;
+}
+
+.flex-box-admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-box-admin > h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container-stmts > h3 {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -1,0 +1,715 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/* MAIN PAGE */
+
+#main-page {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #f1a025;
+    color: black;
+}
+
+#title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#main-text-footer {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* HEADER AND NAVIGATION */
+
+header, #navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navigation {
+    width: 500px;
+}
+
+nav {
+    width: 430px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70%;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+/* LOGO AND USER BUTTON */
+
+#link-to-main {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#user-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* BANNER ON THE MAIN PAGE */
+
+#banner {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url("/public/img/banner-1.jpg");
+    filter: brightness(20%);
+    z-index: -1;
+}
+
+/* TEXT ON BANNER AND STATEMENT BUTTON */
+
+@media all and (min-width: 1000px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 800px;
+        max-width: 1600px;
+        height: 70px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    #logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100px;
+        justify-content: space-between;
+    }
+
+    #logo > p {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+    }
+
+    #logo-pic {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        margin-bottom: -8px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .fac-blocks > img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+
+    #user-button > img {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        width: 35px;
+        height: 35px;
+    }
+
+    #text-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 40%;
+        right: 20%;
+    }
+
+    #text-banner > p {
+        min-width: 600px;
+        max-width: 1000px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        line-height: 50px;
+        font-size: 36px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #stmt-button {
+        cursor: pointer;
+
+        position: absolute;
+        top: 200px;
+        right: 410px;
+
+        height: 50px;
+        width: 180px;
+        border: 0;
+
+        background-color: #2caa99;
+
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    #info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 800px;
+        max-width: 1320px;
+        margin-top: -70px;
+        margin-left: 140px;
+    }
+
+    #info > p {
+        text-align: justify;
+        width: 45%;
+        font-size: 18px;
+        padding-top: 70px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #info-img {
+        height: 650px;
+        width: 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        background-image: url("/public/img/students-works.jpg");
+    }
+
+    #statistics-inside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        min-width: 1000px;
+        max-width: 1340px;
+
+        margin-left: 120px;
+    }
+
+    #top-3-faculties > h3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #top-3-faculties {
+        min-width: 700px;
+        max-width: 1340px;
+        margin-left: 120px;
+    }
+
+    #top-3-faculties-inside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin-top: 30px;
+    }
+
+    #top-3-faculties-inside > a {
+        text-decoration: none;
+    }
+
+    footer > div {
+        margin-left: 100px;
+        padding: 20px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 800px;
+        max-width: 1600px;
+        height: 70px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    #logo > p {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+    }
+
+    #logo-pic {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+
+    #text-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #text-banner > p {
+        min-width: 600px;
+        max-width: 1000px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        line-height: 50px;
+        font-size: 26px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #stmt-button {
+        cursor: pointer;
+
+        position: absolute;
+        top: 200px;
+        right: 330px;
+
+        height: 50px;
+        width: 180px;
+        border: 0px;
+
+        background-color: #2caa99;
+
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    #info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-top: -70px;
+        margin-left: 80px;
+    }
+
+    #info > p {
+        text-align: justify;
+        width: 45%;
+        font-size: 16px;
+        padding-top: 70px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #info-img {
+        height: 650px;
+        width: 45%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        background-image: url("/public/img/students-works.jpg");
+    }
+
+    #statistics-inside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        min-width: 600px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #top-3-faculties > h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -60px;
+        color: black;
+    }
+
+    #top-3-faculties {
+        min-width: 700px;
+        max-width: 1340px;
+        margin-left: 120px;
+    }
+
+    #top-3-faculties-inside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        margin-top: 30px;
+        margin-left: -120px;
+    }
+
+    .fac-blocks > img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+
+    footer > div {
+        margin-left: 20px;
+        padding: 20px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    header {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100px;
+        max-width: 200px;
+        height: 80px;
+        font-size: 14px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #navbar {
+        position: absolute;
+        bottom: 0px;
+        left: -120px;
+    }
+
+    #logo-pic {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 15px;
+    }
+
+    #logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100px;
+        margin-bottom: 22px;
+        margin-left: 20px;
+        justify-content: space-between;
+    }
+
+    #text-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #user-button > img {
+        position: absolute;
+        left: 200px;
+        bottom: 18px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    #text-banner > p {
+        min-width: 150px;
+        max-width: 300px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        line-height: 50px;
+        font-size: 18px;
+        height: fit-content;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #stmt-button {
+        cursor: pointer;
+
+        position: absolute;
+        top: 280px;
+        right: 112px;
+
+        height: 50px;
+        width: 180px;
+        border: 0px;
+
+        background-color: #2caa99;
+
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    #info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /*min-width: 400px;*/
+        margin-top: -70px;
+        margin-left: 60px;
+    }
+
+    #info > p {
+        text-align: justify;
+        width: 50%;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #info-img {
+        display: none;
+    }
+
+    #statistics-inside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        min-width: 300px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    #statistics-inside > div {
+        width: 150px;
+    }
+
+    #top-3-faculties > h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -125px;
+        color: black;
+    }
+
+    #top-3-faculties-inside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        margin-top: 30px;
+        margin-left: -120px;
+    }
+
+    #top-3-faculties {
+        min-width: 100px;
+        max-width: 300px;
+    }
+
+    .fac-blocks > img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+
+    footer > div {
+        margin-left: 20px;
+        padding: 20px;
+    }
+}
+
+#link-stmt {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* BUTTON STATEMENT */
+
+#stmt-button:hover {
+    color: black !important;
+    background: #f1a025;
+}
+
+#stmt-button:hover::before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+
+#stmt-button::before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+
+    color: black !important;
+    content: "";
+    background: #f1a025;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/*!* MODAL WINDOW *!*/
+
+/*.active {*/
+/*    display: flex;*/
+/*}*/
+
+/*.hide {*/
+/*    display: none;*/
+/*}*/
+
+/*.modal-wrapper-auth {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    background-color: rgba(119, 117, 117, 0.5);*/
+/*}*/
+
+/*.modal-window-auth {*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin: auto;*/
+/*    padding: 20px;*/
+/*    background-color: white;*/
+/*    width: 500px;*/
+/*    border: 1px #778496 solid;*/
+/*}*/
+
+/*.close-modal-auth {*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    right: 13px;*/
+/*    font-size: large;*/
+/*    font-weight: 600;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.auth-btn {*/
+/*    width: 100px;*/
+/*    height: 50px;*/
+/*    margin-left: 358px;*/
+/*    background-color: #2caa99;*/
+/*    font-weight: 600;*/
+/*    border: 0px;*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+/*.auth-btn:hover {*/
+/*    background-color: #fad710;*/
+/*}*/
+
+/*#form-auth {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*#form-auth > label {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/* STATISTICS BLOCK */
+
+#statistics {
+    min-height: 200px;
+    max-height: 800px;
+
+    background-color: #f1a025;
+
+    color: black;
+}
+
+#statistics-inside > div {
+    margin-top: 50px;
+}
+
+.nums {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-nums {
+    text-transform: uppercase;
+    margin-top: -20px;
+    font-weight: 500;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* FACULTY CARDS */
+
+.fac-blocks > p {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fac-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
